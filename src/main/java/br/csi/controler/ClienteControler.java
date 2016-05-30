@@ -1,5 +1,16 @@
 package br.csi.controler;
 
-public class ClienteControler {
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
+@Controller
+public class ClienteControler {
+	
+	
+	@RequestMapping("clientes")	
+	public String msgTeste(){
+		System.out.println("chamou o controler");
+		return "cliente";
+	}
+	
 }
